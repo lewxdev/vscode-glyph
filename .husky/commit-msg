@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+echo "[commit-msg] ..."
+bun run commitlint --edit ${1}
