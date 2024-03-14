@@ -31,7 +31,15 @@
     "minimal",
     "theme"
   ],
-  "contributes": {},
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "glyph.minimal",
+        "label": "%iconThemeLabelMinimal%",
+        "path": "./theme/minimal-icon-theme.json"
+      }
+    ]
+  },
   "scripts": {
     "prepare": "husky"
   },

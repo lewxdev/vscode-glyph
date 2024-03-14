@@ -1,0 +1,47 @@
+{
+  "hidesExplorerArrows": true,
+  "iconDefinitions": {
+    "_file_dark": {
+      "iconPath": "icons/dark/text.svg"
+    },
+    "_file_light": {
+      "iconPath": "icons/light/text.svg"
+    },
+    "_folder_dark": {
+      "iconPath": "icons/dark/folder.svg"
+    },
+    "_folder_light": {
+      "iconPath": "icons/light/folder.svg"
+    },
+    "_folder_expanded_dark": {
+      "iconPath": "icons/dark/folder-expanded.svg"
+    },
+    "_folder_expanded_light": {
+      "iconPath": "icons/light/folder-expanded.svg"
+    },
+    "_root_folder_dark": {
+      "iconPath": "icons/dark/root-folder.svg"
+    },
+    "_root_folder_light": {
+      "iconPath": "icons/light/root-folder.svg"
+    },
+    "_root_folder_expanded_dark": {
+      "iconPath": "icons/dark/root-folder-expanded.svg"
+    },
+    "_root_folder_expanded_light": {
+      "iconPath": "icons/light/root-folder-expanded.svg"
+    }
+  },
+  "file": "_file_dark",
+  "folder": "_folder_dark",
+  "folderExpanded": "_folder_expanded_dark",
+  "rootFolder": "_root_folder_dark",
+  "rootFolderExpanded": "_root_folder_expanded_dark",
+  "light": {
+    "file": "_file_light",
+    "folder": "_folder_light",
+    "folderExpanded": "_folder_expanded_light",
+    "rootFolder": "_root_folder_light",
+    "rootFolderExpanded": "_root_folder_expanded_light"
+  }
+}
