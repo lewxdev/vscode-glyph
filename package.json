@@ -1,7 +1,7 @@
 {
   "publisher": "lewxdev",
   "name": "vscode-glyph",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "preview": true,
   "displayName": "%displayName%",
   "description": "%description%",

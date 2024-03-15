@@ -1,0 +1,61 @@
+name: 🚀 Publish to the Visual Studio Marketplace
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check it
+        uses: actions/checkout@v4
+
+      - name: Prepare it
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install it
+        run: npm clean-install
+
+      - name: Package it
+        id: package
+        run: |
+          npm exec vsce package
+          echo ::set-output filename=vsix::$(ls *.vsix)
+
+      - name: Publish it
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: npm exec vsce publish -- --packagePath ${{ steps.package.outputs.filename }}
+
+      - name: Configure it
+        id: config
+        run: |
+          echo ::set-output name=version::$(node -p "require('./package.json').version")
+          echo ::set-output name=preview::$(node -p "require('./package.json').preview")
+
+      - name: Release it
+        id: release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.config.outputs.version }}
+          release_name: v${{ steps.config.outputs.version }}
+          prerelease: ${{ steps.config.outputs.preview == 'true' }}
+          body: |
+            # v${{ steps.config.outputs.version }}
+
+            see [CHANGELOG.md](CHANGELOG.md) for details on this release
+
+      - name: Upload it
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_name: ${{ steps.package.outputs.filename }}
+          asset_path: ${{ steps.package.outputs.filename }}
+          asset_content_type: application/zip
