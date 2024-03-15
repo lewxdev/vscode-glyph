@@ -21,18 +21,29 @@ and this project adheres to
 - Update icons to use a `.woff` icon font rather than `.svg` files to make it
   easier to create new icon theme contributions with more customization
 
+## [0.1.2] - 2024-03-15
+
+### Fixed
+
+- Unnecessary files included in the extension package
+  ([#4](https://github.com/lewxdev/vscode-glyph/pull/4))
+
 ## [0.1.1] - 2024-03-15
 
 ### Fixed
 
-- Incorrect branch for the initial release (#3)
-- Missing updated content in `CHANGELOG.md` for the 0.1.0 release (#3)
+- Incorrect branch for the initial release
+  ([#3](https://github.com/lewxdev/vscode-glyph/pull/3))
+- Missing updated content in `CHANGELOG.md` for the 0.1.0 release
+  ([#3](https://github.com/lewxdev/vscode-glyph/pull/3))
 
 ## [0.1.0] - 2024-03-15
 
 ### Added
 
 - New **Glyph (Minimal)** icon theme contribution (just the most essential icons
-  to ensure everything is working as expected) (#2)
+  to ensure everything is working as expected)
+  ([#2](https://github.com/lewxdev/vscode-glyph/pull/2))
 - All icons made available for the file icon theme
-- Initial contribution-forward setup for the repository (#1)
+- Initial contribution-forward setup for the repository
+  ([#1](https://github.com/lewxdev/vscode-glyph/pull/1))
