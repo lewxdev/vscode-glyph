@@ -1,0 +1,50 @@
+{
+  "publisher": "lewxdev",
+  "name": "vscode-glyph",
+  "version": "0.1.0",
+  "preview": true,
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "icon": "static/image/icon.png",
+  "repository": "github:lewxdev/vscode-glyph",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "galleryBanner": {
+    "color": "#62646a",
+    "theme": "dark"
+  },
+  "sponsor": {
+    "url": "https://buymeacoffee.com/lewxdev"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "keywords": [
+    "customization",
+    "icon-theme",
+    "icons",
+    "minimal",
+    "theme"
+  ],
+  "contributes": {},
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19",
+    "@commitlint/config-conventional": "^19",
+    "@types/vscode": "^1.87",
+    "@vscode/vsce": "^2",
+    "husky": "^9"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

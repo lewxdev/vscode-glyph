@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "name": "Launch Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "${workspaceFolder}/.git",
+        "--disable-extensions",
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ]
+    }
+  ]
+}
