@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      version:
+        description: The version to release (e.g. x.x.x or major, minor, patch)
+        required: false
 
 jobs:
   publish:
@@ -19,11 +24,15 @@ jobs:
       - name: Install it
         run: npm clean-install
 
+      - name: Version it
+        if: ${{ github.event_name == 'workflow_dispatch' }} && ${{ github.event.inputs.version }}
+        run: npm version ${{ github.event.inputs.version }} --no-git-tag-version
+
       - name: Package it
         id: package
         run: |
           npm exec vsce package
-          echo ::set-output filename=vsix::$(ls *.vsix)
+          echo "filename=$(ls *.vsix)" >> $GITHUB_OUTPUT
 
       - name: Publish it
         env:
@@ -33,8 +42,8 @@ jobs:
       - name: Configure it
         id: config
         run: |
-          echo ::set-output name=version::$(node -p "require('./package.json').version")
-          echo ::set-output name=preview::$(node -p "require('./package.json').preview")
+          echo "version=$(node --print "require('./package.json').version")" >> $GITHUB_OUTPUT
+          echo "preview=$(node --print "require('./package.json').preview")" >> $GITHUB_OUTPUT
 
       - name: Release it
         id: release
@@ -44,7 +53,7 @@ jobs:
         with:
           tag_name: v${{ steps.config.outputs.version }}
           release_name: v${{ steps.config.outputs.version }}
-          prerelease: ${{ steps.config.outputs.preview == 'true' }}
+          prerelease: ${{ steps.config.outputs.preview }}
           body: |
             # v${{ steps.config.outputs.version }}
 
