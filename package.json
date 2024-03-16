@@ -1,11 +1,10 @@
 {
   "publisher": "lewxdev",
   "name": "vscode-glyph",
-  "version": "0.1.2",
-  "preview": true,
+  "version": "0.2.0",
   "displayName": "%displayName%",
   "description": "%description%",
-  "icon": "static/image/icon.png",
+  "icon": "static/icon.png",
   "repository": "github:lewxdev/vscode-glyph",
   "license": "MIT",
   "engines": {
@@ -34,9 +33,14 @@
   "contributes": {
     "iconThemes": [
       {
+        "id": "glyph.legacy",
+        "label": "%iconThemeLabelLegacy%",
+        "path": "theme/legacy-icon-theme.json"
+      },
+      {
         "id": "glyph.minimal",
         "label": "%iconThemeLabelMinimal%",
-        "path": "./theme/minimal-icon-theme.json"
+        "path": "theme/minimal-icon-theme.json"
       }
     ]
   },

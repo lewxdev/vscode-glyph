@@ -32,8 +32,7 @@ jobs:
       - run: |
           npm exec vsce package
           echo "filepath=$(ls *.vsix)" >> $GITHUB_ENV
-          echo "version=$(npm pkg get version)" >> $GITHUB_ENV
-          echo "preview=$(npm pkg get preview)" >> $GITHUB_ENV
+          echo "version=$(npm pkg get version | tr -d \")" >> $GITHUB_ENV
 
       - if: ${{ !github.event.inputs.no-publish }}
         env:
@@ -42,4 +41,4 @@ jobs:
 
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create v$version $filepath --generate-notes --prerelease=$preview
+        run: gh release create v$version $filepath --generate-notes

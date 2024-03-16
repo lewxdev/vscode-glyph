@@ -5,7 +5,7 @@
       "type": "extensionHost",
       "request": "launch",
       "args": [
-        "${workspaceFolder}/.git",
+        "${workspaceFolder}/..",
         "--disable-extensions",
         "--extensionDevelopmentPath=${workspaceFolder}"
       ]

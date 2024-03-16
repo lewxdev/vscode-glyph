@@ -1,0 +1,779 @@
+{
+  "hidesExplorerArrows": true,
+  "iconDefinitions": {
+    "_file_dark": {
+      "iconPath": "icons/dark/text.svg"
+    },
+    "_file_light": {
+      "iconPath": "icons/light/text.svg"
+    },
+    "_folder_dark": {
+      "iconPath": "icons/dark/folder.svg"
+    },
+    "_folder_light": {
+      "iconPath": "icons/light/folder.svg"
+    },
+    "_folder_expanded_dark": {
+      "iconPath": "icons/dark/folder-expanded.svg"
+    },
+    "_folder_expanded_light": {
+      "iconPath": "icons/light/folder-expanded.svg"
+    },
+    "_angular_dark": {
+      "iconPath": "icons/dark/angular.svg"
+    },
+    "_angular_light": {
+      "iconPath": "icons/light/angular.svg"
+    },
+    "_archive_dark": {
+      "iconPath": "icons/dark/archive.svg"
+    },
+    "_archive_light": {
+      "iconPath": "icons/light/archive.svg"
+    },
+    "_audio_dark": {
+      "iconPath": "icons/dark/audio.svg"
+    },
+    "_audio_light": {
+      "iconPath": "icons/light/audio.svg"
+    },
+    "_braces_dark": {
+      "iconPath": "icons/dark/braces.svg"
+    },
+    "_braces_light": {
+      "iconPath": "icons/light/braces.svg"
+    },
+    "_brackets_dark": {
+      "iconPath": "icons/dark/brackets.svg"
+    },
+    "_brackets_light": {
+      "iconPath": "icons/light/brackets.svg"
+    },
+    "_camera_dark": {
+      "iconPath": "icons/dark/camera.svg"
+    },
+    "_camera_light": {
+      "iconPath": "icons/light/camera.svg"
+    },
+    "_cert_dark": {
+      "iconPath": "icons/dark/cert.svg"
+    },
+    "_cert_light": {
+      "iconPath": "icons/light/cert.svg"
+    },
+    "_copy_dark": {
+      "iconPath": "icons/dark/copy.svg"
+    },
+    "_copy_light": {
+      "iconPath": "icons/light/copy.svg"
+    },
+    "_database_dark": {
+      "iconPath": "icons/dark/database.svg"
+    },
+    "_database_light": {
+      "iconPath": "icons/light/database.svg"
+    },
+    "_docs_dark": {
+      "iconPath": "icons/dark/docs.svg"
+    },
+    "_docs_light": {
+      "iconPath": "icons/light/docs.svg"
+    },
+    "_document_dark": {
+      "iconPath": "icons/dark/document.svg"
+    },
+    "_document_light": {
+      "iconPath": "icons/light/document.svg"
+    },
+    "_fingerprint_dark": {
+      "iconPath": "icons/dark/fingerprint.svg"
+    },
+    "_fingerprint_light": {
+      "iconPath": "icons/light/fingerprint.svg"
+    },
+    "_foss_dark": {
+      "iconPath": "icons/dark/foss.svg"
+    },
+    "_foss_light": {
+      "iconPath": "icons/light/foss.svg"
+    },
+    "_gatsby_dark": {
+      "iconPath": "icons/dark/gatsby.svg"
+    },
+    "_gatsby_light": {
+      "iconPath": "icons/light/gatsby.svg"
+    },
+    "_gear_dark": {
+      "iconPath": "icons/dark/gear.svg"
+    },
+    "_gear_light": {
+      "iconPath": "icons/light/gear.svg"
+    },
+    "_git_dark": {
+      "iconPath": "icons/dark/git.svg"
+    },
+    "_git_light": {
+      "iconPath": "icons/light/git.svg"
+    },
+    "_history_dark": {
+      "iconPath": "icons/dark/history.svg"
+    },
+    "_history_light": {
+      "iconPath": "icons/light/history.svg"
+    },
+    "_i18n_dark": {
+      "iconPath": "icons/dark/i18n.svg"
+    },
+    "_i18n_light": {
+      "iconPath": "icons/light/i18n.svg"
+    },
+    "_image_dark": {
+      "iconPath": "icons/dark/image.svg"
+    },
+    "_image_light": {
+      "iconPath": "icons/light/image.svg"
+    },
+    "_indent_dark": {
+      "iconPath": "icons/dark/indent.svg"
+    },
+    "_indent_light": {
+      "iconPath": "icons/light/indent.svg"
+    },
+    "_info_dark": {
+      "iconPath": "icons/dark/info.svg"
+    },
+    "_info_light": {
+      "iconPath": "icons/light/info.svg"
+    },
+    "_lock_dark": {
+      "iconPath": "icons/dark/lock.svg"
+    },
+    "_lock_light": {
+      "iconPath": "icons/light/lock.svg"
+    },
+    "_microsoft_dark": {
+      "iconPath": "icons/dark/microsoft.svg"
+    },
+    "_microsoft_light": {
+      "iconPath": "icons/light/microsoft.svg"
+    },
+    "_parens_dark": {
+      "iconPath": "icons/dark/parens.svg"
+    },
+    "_parens_light": {
+      "iconPath": "icons/light/parens.svg"
+    },
+    "_react_dark": {
+      "iconPath": "icons/dark/react.svg"
+    },
+    "_react_light": {
+      "iconPath": "icons/light/react.svg"
+    },
+    "_shell_dark": {
+      "iconPath": "icons/dark/shell.svg"
+    },
+    "_shell_light": {
+      "iconPath": "icons/light/shell.svg"
+    },
+    "_shield_dark": {
+      "iconPath": "icons/dark/shield.svg"
+    },
+    "_shield_light": {
+      "iconPath": "icons/light/shield.svg"
+    },
+    "_table_dark": {
+      "iconPath": "icons/dark/table.svg"
+    },
+    "_table_light": {
+      "iconPath": "icons/light/table.svg"
+    },
+    "_tag_dark": {
+      "iconPath": "icons/dark/tag.svg"
+    },
+    "_tag_light": {
+      "iconPath": "icons/light/tag.svg"
+    },
+    "_test_dark": {
+      "iconPath": "icons/dark/test.svg"
+    },
+    "_test_light": {
+      "iconPath": "icons/light/test.svg"
+    },
+    "_video_dark": {
+      "iconPath": "icons/dark/video.svg"
+    },
+    "_video_light": {
+      "iconPath": "icons/light/video.svg"
+    },
+    "_vue_dark": {
+      "iconPath": "icons/dark/vue.svg"
+    },
+    "_vue_light": {
+      "iconPath": "icons/light/vue.svg"
+    }
+  },
+  "file": "_file_dark",
+  "folder": "_folder_dark",
+  "folderExpanded": "_folder_expanded_dark",
+  "fileExtensions": {
+    "module.ts": "_angular_dark",
+    "module.js": "_angular_dark",
+    "ng-template": "_angular_dark",
+    "component.ts": "_angular_dark",
+    "component.js": "_angular_dark",
+    "guard.ts": "_angular_dark",
+    "guard.js": "_angular_dark",
+    "service.ts": "_angular_dark",
+    "service.js": "_angular_dark",
+    "pipe.ts": "_angular_dark",
+    "pipe.js": "_angular_dark",
+    "filter.js": "_angular_dark",
+    "directive.ts": "_angular_dark",
+    "directive.js": "_angular_dark",
+    "resolver.ts": "_angular_dark",
+    "resolver.js": "_angular_dark",
+    "zip": "_archive_dark",
+    "tar": "_archive_dark",
+    "gz": "_archive_dark",
+    "xz": "_archive_dark",
+    "br": "_archive_dark",
+    "bzip2": "_archive_dark",
+    "gzip": "_archive_dark",
+    "brotli": "_archive_dark",
+    "7z": "_archive_dark",
+    "rar": "_archive_dark",
+    "tgz": "_archive_dark",
+    "mp3": "_audio_dark",
+    "m4a": "_audio_dark",
+    "wav": "_audio_dark",
+    "wma": "_audio_dark",
+    "flac": "_audio_dark",
+    "aiff": "_audio_dark",
+    "js": "_braces_dark",
+    "html": "_brackets_dark",
+    "htm": "_brackets_dark",
+    "xml": "_brackets_dark",
+    "snap": "_camera_dark",
+    "cer": "_cert_dark",
+    "cert": "_cert_dark",
+    "crt": "_cert_dark",
+    "json": "_database_dark",
+    "graphql": "_database_dark",
+    "sqlite": "_database_dark",
+    "md": "_docs_dark",
+    "mdx": "_docs_dark",
+    "txt": "_document_dark",
+    "doc": "_document_dark",
+    "docx": "_document_dark",
+    "rtf": "_document_dark",
+    "pdf": "_document_dark",
+    "pptx": "_document_dark",
+    "ppt": "_document_dark",
+    "pub": "_fingerprint_dark",
+    "key": "_fingerprint_dark",
+    "pem": "_fingerprint_dark",
+    "asc": "_fingerprint_dark",
+    "gpg": "_fingerprint_dark",
+    "env": "_gear_dark",
+    "env.example": "_gear_dark",
+    "ini": "_gear_dark",
+    "dlc": "_gear_dark",
+    "dll": "_gear_dark",
+    "config": "_gear_dark",
+    "conf": "_gear_dark",
+    "properties": "_gear_dark",
+    "prop": "_gear_dark",
+    "settings": "_gear_dark",
+    "option": "_gear_dark",
+    "props": "_gear_dark",
+    "toml": "_gear_dark",
+    "prefs": "_gear_dark",
+    "sln.dotsettings": "_gear_dark",
+    "sln.dotsettings.user": "_gear_dark",
+    "cfg": "_gear_dark",
+    "patch": "_git_dark",
+    "pot": "_i18n_dark",
+    "po": "_i18n_dark",
+    "mo": "_i18n_dark",
+    "png": "_image_dark",
+    "jpeg": "_image_dark",
+    "jpg": "_image_dark",
+    "gif": "_image_dark",
+    "ico": "_image_dark",
+    "tif": "_image_dark",
+    "tiff": "_image_dark",
+    "psd": "_image_dark",
+    "bmp": "_image_dark",
+    "img": "_image_dark",
+    "raw": "_image_dark",
+    "webp": "_image_dark",
+    "eps": "_image_dark",
+    "svg": "_image_dark",
+    "log": "_info_dark",
+    "lock": "_lock_dark",
+    "vscodeignore": "_microsoft_dark",
+    "vsixmanifest": "_microsoft_dark",
+    "vsix": "_microsoft_dark",
+    "code-workplace": "_microsoft_dark",
+    "csproj": "_microsoft_dark",
+    "ruleset": "_microsoft_dark",
+    "sln": "_microsoft_dark",
+    "suo": "_microsoft_dark",
+    "vb": "_microsoft_dark",
+    "vbs": "_microsoft_dark",
+    "vcxitems": "_microsoft_dark",
+    "vcxitems.filters": "_microsoft_dark",
+    "vcxproj": "_microsoft_dark",
+    "vcxproj.filters": "_microsoft_dark",
+    "lisp": "_parens_dark",
+    "lsp": "_parens_dark",
+    "l": "_parens_dark",
+    "cl": "_parens_dark",
+    "fasl": "_parens_dark",
+    "el": "_parens_dark",
+    "elc": "_parens_dark",
+    "wat": "_parens_dark",
+    "jsx": "_react_dark",
+    "tsx": "_react_dark",
+    "zshrc": "_shell_dark",
+    "tcsh": "_shell_dark",
+    "awk": "_shell_dark",
+    "fish": "_shell_dark",
+    "xlsx": "_table_dark",
+    "xls": "_table_dark",
+    "csv": "_table_dark",
+    "tsv": "_table_dark",
+    "css": "_tag_dark",
+    "sass": "_tag_dark",
+    "scss": "_tag_dark",
+    "less": "_tag_dark",
+    "styl": "_tag_dark",
+    "spec.ts": "_test_dark",
+    "e2e-spec.ts": "_test_dark",
+    "test.ts": "_test_dark",
+    "ts.snap": "_test_dark",
+    "spec.tsx": "_test_dark",
+    "test.tsx": "_test_dark",
+    "tsx.snap": "_test_dark",
+    "spec.jsx": "_test_dark",
+    "test.jsx": "_test_dark",
+    "jsx.snap": "_test_dark",
+    "spec.js": "_test_dark",
+    "e2e-spec.js": "_test_dark",
+    "test.js": "_test_dark",
+    "js.snap": "_test_dark",
+    "webm": "_video_dark",
+    "mkv": "_video_dark",
+    "avi": "_video_dark",
+    "mov": "_video_dark",
+    "wmv": "_video_dark",
+    "mp4": "_video_dark",
+    "m4v": "_video_dark",
+    "mpg": "_video_dark",
+    "mpeg": "_video_dark",
+    "m2v": "_video_dark",
+    "mpv": "_video_dark",
+    "vue": "_vue_dark",
+    "store.js": "_vue_dark",
+    "store.ts": "_vue_dark"
+  },
+  "fileNames": {
+    "angular-cli.json": "_angular_dark",
+    "angular.json": "_angular_dark",
+    "license": "_cert_dark",
+    "license.md": "_cert_dark",
+    "license.txt": "_cert_dark",
+    "licence": "_cert_dark",
+    "licence.md": "_cert_dark",
+    "licence.txt": "_cert_dark",
+    "unlicense": "_cert_dark",
+    "unlicense.md": "_cert_dark",
+    "unlicense.txt": "_cert_dark",
+    "authors": "_copy_dark",
+    "authors.md": "_copy_dark",
+    "authors.txt": "_copy_dark",
+    ".htaccess": "_document_dark",
+    "sitemap.xml": "_document_dark",
+    "_headers": "_document_dark",
+    "_redirects": "_document_dark",
+    "robots.txt": "_document_dark",
+    ".htpasswd": "_fingerprint_dark",
+    "contributing.md": "_foss_dark",
+    "credits": "_foss_dark",
+    "credits.md": "_foss_dark",
+    "credits.txt": "_foss_dark",
+    "gatsby-config.js": "_gatsby_dark",
+    "gatsby-node.js": "_gatsby_dark",
+    "gatsby-browser.js": "_gatsby_dark",
+    "gatsby-ssr.js": "_gatsby_dark",
+    "package.json": "_gear_dark",
+    ".jshintignore": "_gear_dark",
+    ".buildignore": "_gear_dark",
+    ".mrconfig": "_gear_dark",
+    ".yardopts": "_gear_dark",
+    "manifest.mf": "_gear_dark",
+    ".clang-format": "_gear_dark",
+    ".clang-tidy": "_gear_dark",
+    ".gitignore": "_git_dark",
+    ".gitconfig": "_git_dark",
+    ".gitattributes": "_git_dark",
+    ".gitmodules": "_git_dark",
+    ".gitkeep": "_git_dark",
+    ".git-history": "_git_dark",
+    "changelog": "_history_dark",
+    "changelog.md": "_history_dark",
+    "changelog.txt": "_history_dark",
+    "changes": "_history_dark",
+    "changes.md": "_history_dark",
+    "changes.txt": "_history_dark",
+    ".prettierrc": "_indent_dark",
+    "prettier.config.js": "_indent_dark",
+    ".prettierrc.js": "_indent_dark",
+    ".prettierrc.json": "_indent_dark",
+    ".prettierrc.yaml": "_indent_dark",
+    ".prettierrc.yml": "_indent_dark",
+    ".prettierignore": "_indent_dark",
+    "readme": "_info_dark",
+    "readme.md": "_info_dark",
+    "readme.txt": "_info_dark",
+    "security.md": "_lock_dark",
+    "security.txt": "_lock_dark",
+    "security": "_lock_dark",
+    ".eslintignore": "_shield_dark",
+    ".eslintrc": "_shield_dark",
+    ".eslintrc.js": "_shield_dark",
+    ".eslintrc.json": "_shield_dark",
+    ".eslintrc.cjs": "_shield_dark",
+    ".eslintrc.yaml": "_shield_dark",
+    ".eslintrc.yml": "_shield_dark",
+    ".eslintcache": "_shield_dark",
+    "vue.config.js": "_vue_dark",
+    "vue.config.ts": "_vue_dark",
+    "store.js": "_vue_dark",
+    "store.ts": "_vue_dark",
+    "nuxt.config.js": "_vue_dark",
+    "nuxt.config.ts": "_vue_dark"
+  },
+  "languageIds": {
+    "coffeescript": "_braces_dark",
+    "c": "_braces_dark",
+    "cpp": "_braces_dark",
+    "csharp": "_braces_dark",
+    "css": "_braces_dark",
+    "fsharp": "_braces_dark",
+    "go": "_braces_dark",
+    "groovy": "_braces_dark",
+    "handlebars": "_braces_dark",
+    "html": "_braces_dark",
+    "properties": "_braces_dark",
+    "java": "_braces_dark",
+    "javascriptreact": "_braces_dark",
+    "javascript": "_braces_dark",
+    "less": "_braces_dark",
+    "lua": "_braces_dark",
+    "objective-c": "_braces_dark",
+    "perl": "_braces_dark",
+    "php": "_braces_dark",
+    "jade": "_braces_dark",
+    "python": "_braces_dark",
+    "ruby": "_braces_dark",
+    "rust": "_braces_dark",
+    "scss": "_braces_dark",
+    "swift": "_braces_dark",
+    "typescript": "_braces_dark",
+    "typescriptreact": "_braces_dark",
+    "xml": "_braces_dark",
+    "yaml": "_braces_dark",
+    "json": "_database_dark",
+    "sql": "_database_dark",
+    "markdown": "_docs_dark",
+    "makefile": "_gear_dark",
+    "clojure": "_parens_dark",
+    "bat": "_shell_dark",
+    "powershell": "_shell_dark",
+    "shellscript": "_shell_dark"
+  },
+  "light": {
+    "file": "_file_light",
+    "folder": "_folder_light",
+    "folderExpanded": "_folder_expanded_light",
+    "fileExtensions": {
+      "module.ts": "_angular_light",
+      "module.js": "_angular_light",
+      "ng-template": "_angular_light",
+      "component.ts": "_angular_light",
+      "component.js": "_angular_light",
+      "guard.ts": "_angular_light",
+      "guard.js": "_angular_light",
+      "service.ts": "_angular_light",
+      "service.js": "_angular_light",
+      "pipe.ts": "_angular_light",
+      "pipe.js": "_angular_light",
+      "filter.js": "_angular_light",
+      "directive.ts": "_angular_light",
+      "directive.js": "_angular_light",
+      "resolver.ts": "_angular_light",
+      "resolver.js": "_angular_light",
+      "zip": "_archive_light",
+      "tar": "_archive_light",
+      "gz": "_archive_light",
+      "xz": "_archive_light",
+      "br": "_archive_light",
+      "bzip2": "_archive_light",
+      "gzip": "_archive_light",
+      "brotli": "_archive_light",
+      "7z": "_archive_light",
+      "rar": "_archive_light",
+      "tgz": "_archive_light",
+      "mp3": "_audio_light",
+      "m4a": "_audio_light",
+      "wav": "_audio_light",
+      "wma": "_audio_light",
+      "flac": "_audio_light",
+      "aiff": "_audio_light",
+      "js": "_braces_light",
+      "html": "_brackets_light",
+      "htm": "_brackets_light",
+      "xml": "_brackets_light",
+      "snap": "_camera_light",
+      "cer": "_cert_light",
+      "cert": "_cert_light",
+      "crt": "_cert_light",
+      "json": "_database_light",
+      "graphql": "_database_light",
+      "sqlite": "_database_light",
+      "md": "_docs_light",
+      "mdx": "_docs_light",
+      "txt": "_document_light",
+      "doc": "_document_light",
+      "docx": "_document_light",
+      "rtf": "_document_light",
+      "pdf": "_document_light",
+      "pptx": "_document_light",
+      "ppt": "_document_light",
+      "pub": "_fingerprint_light",
+      "key": "_fingerprint_light",
+      "pem": "_fingerprint_light",
+      "asc": "_fingerprint_light",
+      "gpg": "_fingerprint_light",
+      "env": "_gear_light",
+      "env.example": "_gear_light",
+      "ini": "_gear_light",
+      "dlc": "_gear_light",
+      "dll": "_gear_light",
+      "config": "_gear_light",
+      "conf": "_gear_light",
+      "properties": "_gear_light",
+      "prop": "_gear_light",
+      "settings": "_gear_light",
+      "option": "_gear_light",
+      "props": "_gear_light",
+      "toml": "_gear_light",
+      "prefs": "_gear_light",
+      "sln.dotsettings": "_gear_light",
+      "sln.dotsettings.user": "_gear_light",
+      "cfg": "_gear_light",
+      "patch": "_git_light",
+      "pot": "_i18n_light",
+      "po": "_i18n_light",
+      "mo": "_i18n_light",
+      "png": "_image_light",
+      "jpeg": "_image_light",
+      "jpg": "_image_light",
+      "gif": "_image_light",
+      "ico": "_image_light",
+      "tif": "_image_light",
+      "tiff": "_image_light",
+      "psd": "_image_light",
+      "bmp": "_image_light",
+      "img": "_image_light",
+      "raw": "_image_light",
+      "webp": "_image_light",
+      "eps": "_image_light",
+      "svg": "_image_light",
+      "log": "_info_light",
+      "lock": "_lock_light",
+      "vscodeignore": "_microsoft_light",
+      "vsixmanifest": "_microsoft_light",
+      "vsix": "_microsoft_light",
+      "code-workplace": "_microsoft_light",
+      "csproj": "_microsoft_light",
+      "ruleset": "_microsoft_light",
+      "sln": "_microsoft_light",
+      "suo": "_microsoft_light",
+      "vb": "_microsoft_light",
+      "vbs": "_microsoft_light",
+      "vcxitems": "_microsoft_light",
+      "vcxitems.filters": "_microsoft_light",
+      "vcxproj": "_microsoft_light",
+      "vcxproj.filters": "_microsoft_light",
+      "lisp": "_parens_light",
+      "lsp": "_parens_light",
+      "l": "_parens_light",
+      "cl": "_parens_light",
+      "fasl": "_parens_light",
+      "el": "_parens_light",
+      "elc": "_parens_light",
+      "wat": "_parens_light",
+      "jsx": "_react_light",
+      "tsx": "_react_light",
+      "zshrc": "_shell_light",
+      "tcsh": "_shell_light",
+      "awk": "_shell_light",
+      "fish": "_shell_light",
+      "xlsx": "_table_light",
+      "xls": "_table_light",
+      "csv": "_table_light",
+      "tsv": "_table_light",
+      "css": "_tag_light",
+      "sass": "_tag_light",
+      "scss": "_tag_light",
+      "less": "_tag_light",
+      "styl": "_tag_light",
+      "spec.ts": "_test_light",
+      "e2e-spec.ts": "_test_light",
+      "test.ts": "_test_light",
+      "ts.snap": "_test_light",
+      "spec.tsx": "_test_light",
+      "test.tsx": "_test_light",
+      "tsx.snap": "_test_light",
+      "spec.jsx": "_test_light",
+      "test.jsx": "_test_light",
+      "jsx.snap": "_test_light",
+      "spec.js": "_test_light",
+      "e2e-spec.js": "_test_light",
+      "test.js": "_test_light",
+      "js.snap": "_test_light",
+      "webm": "_video_light",
+      "mkv": "_video_light",
+      "avi": "_video_light",
+      "mov": "_video_light",
+      "wmv": "_video_light",
+      "mp4": "_video_light",
+      "m4v": "_video_light",
+      "mpg": "_video_light",
+      "mpeg": "_video_light",
+      "m2v": "_video_light",
+      "mpv": "_video_light",
+      "vue": "_vue_light",
+      "store.js": "_vue_light",
+      "store.ts": "_vue_light"
+    },
+    "fileNames": {
+      "angular-cli.json": "_angular_light",
+      "angular.json": "_angular_light",
+      "license": "_cert_light",
+      "license.md": "_cert_light",
+      "license.txt": "_cert_light",
+      "licence": "_cert_light",
+      "licence.md": "_cert_light",
+      "licence.txt": "_cert_light",
+      "unlicense": "_cert_light",
+      "unlicense.md": "_cert_light",
+      "unlicense.txt": "_cert_light",
+      "authors": "_copy_light",
+      "authors.md": "_copy_light",
+      "authors.txt": "_copy_light",
+      ".htaccess": "_document_light",
+      "sitemap.xml": "_document_light",
+      "_headers": "_document_light",
+      "_redirects": "_document_light",
+      "robots.txt": "_document_light",
+      ".htpasswd": "_fingerprint_light",
+      "contributing.md": "_foss_light",
+      "credits": "_foss_light",
+      "credits.md": "_foss_light",
+      "credits.txt": "_foss_light",
+      "gatsby-config.js": "_gatsby_light",
+      "gatsby-node.js": "_gatsby_light",
+      "gatsby-browser.js": "_gatsby_light",
+      "gatsby-ssr.js": "_gatsby_light",
+      "package.json": "_gear_light",
+      ".jshintignore": "_gear_light",
+      ".buildignore": "_gear_light",
+      ".mrconfig": "_gear_light",
+      ".yardopts": "_gear_light",
+      "manifest.mf": "_gear_light",
+      ".clang-format": "_gear_light",
+      ".clang-tidy": "_gear_light",
+      ".gitignore": "_git_light",
+      ".gitconfig": "_git_light",
+      ".gitattributes": "_git_light",
+      ".gitmodules": "_git_light",
+      ".gitkeep": "_git_light",
+      ".git-history": "_git_light",
+      "changelog": "_history_light",
+      "changelog.md": "_history_light",
+      "changelog.txt": "_history_light",
+      "changes": "_history_light",
+      "changes.md": "_history_light",
+      "changes.txt": "_history_light",
+      ".prettierrc": "_indent_light",
+      "prettier.config.js": "_indent_light",
+      ".prettierrc.js": "_indent_light",
+      ".prettierrc.json": "_indent_light",
+      ".prettierrc.yaml": "_indent_light",
+      ".prettierrc.yml": "_indent_light",
+      ".prettierignore": "_indent_light",
+      "readme": "_info_light",
+      "readme.md": "_info_light",
+      "readme.txt": "_info_light",
+      "security.md": "_lock_light",
+      "security.txt": "_lock_light",
+      "security": "_lock_light",
+      ".eslintignore": "_shield_light",
+      ".eslintrc": "_shield_light",
+      ".eslintrc.js": "_shield_light",
+      ".eslintrc.json": "_shield_light",
+      ".eslintrc.cjs": "_shield_light",
+      ".eslintrc.yaml": "_shield_light",
+      ".eslintrc.yml": "_shield_light",
+      ".eslintcache": "_shield_light",
+      "vue.config.js": "_vue_light",
+      "vue.config.ts": "_vue_light",
+      "store.js": "_vue_light",
+      "store.ts": "_vue_light",
+      "nuxt.config.js": "_vue_light",
+      "nuxt.config.ts": "_vue_light"
+    },
+    "languageIds": {
+      "coffeescript": "_braces_light",
+      "c": "_braces_light",
+      "cpp": "_braces_light",
+      "csharp": "_braces_light",
+      "css": "_braces_light",
+      "fsharp": "_braces_light",
+      "go": "_braces_light",
+      "groovy": "_braces_light",
+      "handlebars": "_braces_light",
+      "html": "_braces_light",
+      "properties": "_braces_light",
+      "java": "_braces_light",
+      "javascriptreact": "_braces_light",
+      "javascript": "_braces_light",
+      "less": "_braces_light",
+      "lua": "_braces_light",
+      "objective-c": "_braces_light",
+      "perl": "_braces_light",
+      "php": "_braces_light",
+      "jade": "_braces_light",
+      "python": "_braces_light",
+      "ruby": "_braces_light",
+      "rust": "_braces_light",
+      "scss": "_braces_light",
+      "swift": "_braces_light",
+      "typescript": "_braces_light",
+      "typescriptreact": "_braces_light",
+      "xml": "_braces_light",
+      "yaml": "_braces_light",
+      "json": "_database_light",
+      "sql": "_database_light",
+      "markdown": "_docs_light",
+      "makefile": "_gear_light",
+      "clojure": "_parens_light",
+      "bat": "_shell_light",
+      "powershell": "_shell_light",
+      "shellscript": "_shell_light"
+    }
+  }
+}
