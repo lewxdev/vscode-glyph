@@ -1,5 +1,6 @@
 {
   "displayName": "Glyph for vscode",
   "description": "A minimal icon theme for vscode inspired by Spectrum Icons by Alex Perronnet",
+  "iconThemeLabelLegacy": "Glyph (Legacy)",
   "iconThemeLabelMinimal": "Glyph (Minimal)"
 }

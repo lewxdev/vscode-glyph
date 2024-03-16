@@ -9,11 +9,11 @@
 
 </div>
 
-![Social preview](static/image/social-preview.png)
+![Social preview](static/social-preview.png)
 
 ## Overview
 
-After [**Spectrum Icons**](static/image/spectrum-legacy.png) was removed from
+After [**Spectrum Icons**](static/spectrum-legacy.png) was removed from
 GitHub and the Visual Studio Marketplace, I meticulously crafted this icon theme
 to be its successor.
 

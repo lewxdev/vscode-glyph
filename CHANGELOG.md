@@ -10,8 +10,6 @@ and this project adheres to
 
 ### Added
 
-- New **Glyph (Legacy)** icon theme contribution (all icons from the original
-  Spectrum Icon extension)
 - New **Glyph** icon theme contribution (the full set of icons available, a
   kitchen sink of sorts)
 - Color settings available for fine-tuning the icon colors (with some presets)
@@ -20,6 +18,24 @@ and this project adheres to
 
 - Update icons to use a `.woff` icon font rather than `.svg` files to make it
   easier to create new icon theme contributions with more customization
+
+## [0.2.0] - 2024-03-15
+
+### Added
+
+- New **Glyph (Legacy)** icon theme contribution (all icons from the original
+  Spectrum Icon extension)
+  ([#7](https://github.com/lewxdev/vscode-glyph/pull/7))
+
+### Changed
+
+- Promoted the extension out of preview status 🎉
+- Updated social preview image with the new icon changes included
+
+### Fixed
+
+- Gear icon outermost stroke not rendering correctly (also improved the shape
+  and size of the icon)
 
 ## [0.1.2] - 2024-03-15
 
