@@ -1,9 +1,12 @@
+// learn more: https://go.microsoft.com/fwlink/?LinkId=830387
 {
+  "version": "0.2.0",
   "configurations": [
     {
       "name": "Launch Extension",
       "type": "extensionHost",
       "request": "launch",
+      "preLaunchTask": "npm: build",
       "args": [
         "${workspaceFolder}/..",
         "--disable-extensions",

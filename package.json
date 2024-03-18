@@ -33,26 +33,37 @@
   "contributes": {
     "iconThemes": [
       {
-        "id": "glyph.legacy",
+        "id": "glyph.legacy-original",
         "label": "%iconThemeLabelLegacy%",
-        "path": "theme/legacy-icon-theme.json"
+        "path": "dist/fileicons/legacy-original-icon-theme.json"
       },
       {
-        "id": "glyph.minimal",
+        "id": "glyph.legacy-minimal",
         "label": "%iconThemeLabelMinimal%",
-        "path": "theme/minimal-icon-theme.json"
+        "path": "dist/fileicons/legacy-minimal-icon-theme.json"
       }
     ]
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:fonts": "fantasticon",
+    "build:dist": "tsc",
+    "build:iconsets": "node dist/scripts/build-iconsets.js",
+    "build": "npm-run-all -s build:*"
+  },
+  "dependencies": {
+    "lodash": "^4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19",
     "@commitlint/config-conventional": "^19",
+    "@tsconfig/strictest": "^2",
+    "@types/lodash": "^4",
     "@types/vscode": "^1.87",
     "@vscode/vsce": "^2",
-    "husky": "^9"
+    "fantasticon": "^2",
+    "husky": "^9",
+    "npm-run-all": "^4"
   },
   "commitlint": {
     "extends": [
