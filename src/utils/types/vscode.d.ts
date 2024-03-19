@@ -24,8 +24,8 @@ export type FontDefinition = {
 };
 
 /** @see {@link https://code.visualstudio.com/api/extension-guides/file-icon-theme#file-association | Extension API - File association} */
-export type FileAssociation = Record<FileAssociationKey, string> &
-  Record<FileAssociationGroupKey, Record<string, string>>;
+export type FileAssociation = Partial<Record<FileAssociationKey, string>> &
+  Partial<Record<FileAssociationGroupKey, Record<string, string>>>;
 
 export type IconThemeDocument = FileAssociation &
   Partial<Record<ColorThemeKey, FileAssociation>> & {

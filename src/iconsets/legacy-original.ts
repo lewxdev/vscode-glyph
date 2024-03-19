@@ -1,14 +1,14 @@
 // DO NOT MODIFY this file, extend it instead
 
 import legacyMinimal from "./legacy-minimal";
-import { createIconset } from "../utils/create-iconset";
+import { createIconSetBuilder } from "../build/iconsets";
 
 /**
  * @module legacyOriginal
  * @description The original icon set from Spectrum Icons
  */
-export default createIconset({
-  extend: legacyMinimal,
+export default createIconSetBuilder({
+  extend: legacyMinimal(),
   icons: [
     [
       "angular",

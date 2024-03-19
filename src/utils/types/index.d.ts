@@ -8,6 +8,8 @@ import type codepoints from "../../codepoints.json";
 
 export type CodepointKey = keyof typeof codepoints;
 
+export type ColorThemeName = ColorThemeKey | "default";
+
 export type ColorMap = Map<"default" | ColorThemeKey, string>;
 
 export type IconAssociation =
@@ -15,7 +17,7 @@ export type IconAssociation =
   | FileAssociationKey;
 
 export type IconInitializer = [
-  config: CodepointKey | [key: CodepointKey, colorMap: ColorMap],
+  key: CodepointKey,
   association: IconAssociation,
   ...rest: IconAssociation[]
 ];

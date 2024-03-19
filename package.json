@@ -7,6 +7,7 @@
   "icon": "static/icon.png",
   "repository": "github:lewxdev/vscode-glyph",
   "license": "MIT",
+  "main": "dist/extension.js",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -30,7 +31,33 @@
     "minimal",
     "theme"
   ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "contributes": {
+    "configuration": {
+      "title": "%displayName%",
+      "properties": {
+        "glyph.iconConfig": {
+          "description": "%glyph.iconConfig.description%",
+          "type": "object",
+          "properties": {
+            "colorDefault": {
+              "description": "%glyph.iconConfig.defaultColor.description%",
+              "type": "string",
+              "format": "color-hex",
+              "default": "#7b7d84"
+            },
+            "colorLight": {
+              "description": "%glyph.iconConfig.lightColor.description%",
+              "type": "string",
+              "format": "color-hex",
+              "default": "#62646a"
+            }
+          }
+        }
+      }
+    },
     "iconThemes": [
       {
         "id": "glyph.legacy-original",
@@ -48,7 +75,6 @@
     "prepare": "husky",
     "build:fonts": "fantasticon",
     "build:dist": "tsc",
-    "build:iconsets": "node dist/scripts/build-iconsets.js",
     "build": "npm-run-all -s build:*"
   },
   "dependencies": {

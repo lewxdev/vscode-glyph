@@ -1,12 +1,12 @@
 // DO NOT MODIFY this file, extend it instead
 
-import { createIconset } from "../utils/create-iconset";
+import { createIconSetBuilder } from "../build/iconsets";
 
 /**
  * @module legacyMinimal
  * @description The original _minimal_ icon set from Spectrum Icons
  */
-export default createIconset({
+export default createIconSetBuilder({
   icons: [
     ["file", "file"],
     ["folder", "folder"],

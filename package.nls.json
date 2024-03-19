@@ -2,5 +2,8 @@
   "displayName": "Glyph for vscode",
   "description": "A minimal icon theme for vscode inspired by Spectrum Icons by Alex Perronnet",
   "iconThemeLabelLegacy": "Glyph (Legacy)",
-  "iconThemeLabelMinimal": "Glyph (Minimal)"
+  "iconThemeLabelMinimal": "Glyph (Minimal)",
+  "glyph.iconConfig.description": "Customize the colors of the icons",
+  "glyph.iconConfig.defaultColor.description": "The default color of the icons",
+  "glyph.iconConfig.lightColor.description": "The color of the icons in light themes"
 }
