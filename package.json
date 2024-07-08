@@ -51,9 +51,18 @@
     "@commitlint/cli": "^19",
     "@commitlint/config-conventional": "^19",
     "@types/vscode": "^1.87",
-    "@vscode/vsce": "^2",
+    "@vscode/vsce": "^2.25.0",
     "husky": "^9"
   },
+  "files": [
+    "static",
+    "theme",
+    "package.json",
+    "package.nls.json",
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "README.md"
+  ],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
