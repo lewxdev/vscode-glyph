@@ -1,7 +1,8 @@
 {
+  "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Extension",
+      "name": "launch extension",
       "type": "extensionHost",
       "request": "launch",
       "args": [
