@@ -17,9 +17,9 @@ jobs:
 
       - run: |
           bun install
-          bun run vsce package
-          echo "filepath=$(ls *.vsix)" >> $GITHUB_ENV
-          echo "version=$(ls *.vsix | grep -oE '\d+\.\d+\.\d+')" >> $GITHUB_ENV
+          bun run build:vsix
+          echo "filepath=$(ls dist/*.vsix)" >> $GITHUB_ENV
+          echo "version=$(ls dist/*.vsix | grep -oE '\d+\.\d+\.\d+')" >> $GITHUB_ENV
 
       - env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
