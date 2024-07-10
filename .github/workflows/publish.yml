@@ -1,17 +1,9 @@
-name: 🚀 Publish to the Visual Studio Marketplace
+name: publish release to marketplace
+
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
-    inputs:
-      version:
-        description: The version to release (e.g. x.x.x or major, minor, patch)
-        required: false
-      no-publish:
-        type: boolean
-        description: Skip publishing to the marketplace
-        default: false
 
 permissions:
   contents: write
@@ -21,23 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-      - run: npm clean-install
-
-      - if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.version }}
-        run: npm version ${{ github.event.inputs.version }} --no-git-tag-version
+      - uses: oven-sh/setup-bun@v2
 
       - run: |
-          npm exec vsce package
+          bun install
+          bun run vsce package
           echo "filepath=$(ls *.vsix)" >> $GITHUB_ENV
-          echo "version=$(npm pkg get version | tr -d \")" >> $GITHUB_ENV
+          echo "version=$(ls *.vsix | grep -oE '\d+\.\d+\.\d+')" >> $GITHUB_ENV
 
-      - if: ${{ !github.event.inputs.no-publish }}
-        env:
+      - env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npm exec vsce publish -- --packagePath $filepath
+        run: bun run vsce publish --packagePath $filepath
 
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
