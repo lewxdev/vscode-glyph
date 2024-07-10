@@ -1,12 +1,12 @@
 import { build } from "esbuild";
+import * as themes from "../src/themes";
 
 const isProduction = process.argv.includes("--production");
 
-// see: https://code.visualstudio.com/api/working-with-extensions/bundling-extension#using-esbuild
+// see: https://aka.ms/vscode-bundle-extension#using-esbuild
 await build({
   entryPoints: [
-    "static/**/*",
-    "theme/**/*",
+    "static/*",
     "src/extension.ts",
     "package.json",
     "package.nls.json",
@@ -19,6 +19,7 @@ await build({
     ".md": "copy",
     ".png": "copy",
     ".svg": "copy",
+    ".woff": "copy",
   },
   outdir: "dist",
   external: ["vscode"],
@@ -30,7 +31,11 @@ await build({
   sourcemap: !isProduction,
 });
 
+await Array.fromAsync(Object.values(themes), async (theme) => {
+  await theme.write();
+});
+
 if (isProduction) {
   const { createVSIX } = await import("@vscode/vsce");
-  await createVSIX({ cwd: "dist" });
+  await createVSIX({ cwd: "dist", dependencies: false });
 }
