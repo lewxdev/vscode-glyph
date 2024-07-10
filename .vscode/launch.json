@@ -8,8 +8,9 @@
       "args": [
         "${workspaceFolder}/..",
         "--disable-extensions",
-        "--extensionDevelopmentPath=${workspaceFolder}"
-      ]
+        "--extensionDevelopmentPath=${workspaceFolder}/dist"
+      ],
+      "preLaunchTask": "build extension"
     }
   ]
 }
