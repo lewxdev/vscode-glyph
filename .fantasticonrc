@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const { FontAssetType, OtherAssetType } = require("fantasticon");
+
+/** @type {import("fantasticon").RunnerOptions} */
+module.exports = {
+  name: "glyph",
+  inputDir: "static/icons",
+  outputDir: "static",
+  assetTypes: [OtherAssetType.TS],
+  fontTypes: [FontAssetType.WOFF],
+  formatOptions: {
+    ts: {
+      types: ["constant", "enum"],
+    },
+  },
+  pathOptions: {
+    ts: "src/constants/glyph.ts",
+  },
+  getIconId({ basename }) {
+    return basename.replaceAll("-", "_");
+  },
+};

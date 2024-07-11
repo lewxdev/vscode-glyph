@@ -18,7 +18,7 @@ jobs:
 
       - run: |
           bun install
-          bun run build:vsix
+          bun run build --production
           echo "filepath=$(ls dist/*.vsix)" >> $GITHUB_ENV
           echo "version=$(ls dist/*.vsix | grep -oE '\d+\.\d+\.\d+')" >> $GITHUB_ENV
 

@@ -50,19 +50,24 @@
   },
   "scripts": {
     "build": "bun run clean && bun run scripts/build.ts",
-    "build:vsix": "bun run build --production",
     "clean": "git clean -xdf dist",
+    "generate": "fantasticon",
     "prepare": "husky"
+  },
+  "dependencies": {
+    "brace-expansion": "^4.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19",
     "@commitlint/config-conventional": "^19",
     "@tsconfig/bun": "^1.0.7",
     "@tsconfig/strictest": "^2.0.5",
+    "@types/brace-expansion": "^1.1.2",
     "@types/bun": "^1.1.6",
     "@types/vscode": "^1.87",
     "@vscode/vsce": "^2.25.0",
     "esbuild": "^0.23.0",
+    "fantasticon": "^3.0.0",
     "husky": "^9"
   },
   "commitlint": {
