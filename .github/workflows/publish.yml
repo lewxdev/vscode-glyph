@@ -2,15 +2,14 @@ name: publish release to marketplace
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*' # Triggers the workflow whenever you push a version tag like v1.0.0
 
 permissions:
   contents: write
 
 jobs:
   publish:
-    if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,10 +21,17 @@ jobs:
           echo "filepath=$(ls dist/*.vsix)" >> $GITHUB_ENV
           echo "version=$(ls dist/*.vsix | grep -oE '\d+\.\d+\.\d+')" >> $GITHUB_ENV
 
+      # Publish to the official Microsoft Visual Studio Marketplace
       - env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: bun run vsce publish --packagePath $filepath
 
+      # Publish to Eclipse Open VSX (for VSCodium users)
+      - env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+        run: bunx ovsx publish $filepath -p $OVSX_PAT
+
+      # Create the GitHub Release
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create v$version $filepath --generate-notes --verify-tag
+        run: gh release create v$version $filepath --generate-notes
